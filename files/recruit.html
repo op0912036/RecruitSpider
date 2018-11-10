@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>搜索职位</title>
+    
+        <meta name="description" content="郑州爬虫招聘频道由智联招聘承建,提供更新、更准的郑州爬虫的招聘信息,帮助求职者在智联招聘网找到更合适的工作【郑州爬虫权威招聘信息网】" />
+            <meta name="keywords" content="手机找工作,人才,招聘,简历,工作,求职,面试,应聘,跳槽,高薪,兼职,猎头,薪酬,薪资,培训,测评,人事,实习,智联招聘客户端下载,智联招聘手机网 郑州爬虫招聘" />
+                    <meta charset="utf-8" />
+    
+    <meta name="baidu-tc-cerfication" content="315f7ed10c0de83badbd33934a33aec1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimal-ui" />
+    
+    
+            <meta name="location" content="province=河南;city=郑州;coord=">
+    <meta name="baidu-site-verification" content="SQUARaNLRZ" />
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//img09.zhaopin.cn/2012/other/mobile/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="//img09.zhaopin.cn/2012/other/mobile/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="//img09.zhaopin.cn/2012/other/mobile/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="//img09.zhaopin.cn/2012/other/mobile/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="//img09.zhaopin.cn/2012/other/mobile/favicons/favicon-16x16.png" sizes="16x16">
+
+    <link rel="miphtml" href="https://mip.zhaopin.com/zhengzhou-719/">
+    
+    
+    <link type="text/css" rel="stylesheet" href="//img09.zhaopin.cn/2012/other/mobile/Mcontent/Site171018.css" />
+    <link type="text/css" rel="stylesheet" href="//img09.zhaopin.cn/2012/other/mobile/Mcontent/b.css" />
+    <link type="text/css" rel="stylesheet" href="//img09.zhaopin.cn/2012/other/mobile/Mcontent/publicStyle.css" />
+    <script src="//img09.zhaopin.cn/2012/other/mobile/Mcontent/Scripts/zepto.js"></script>
+    <script src="//img09.zhaopin.cn/2012/other/mobile/Mcontent/Scripts/zp-m-share.js?v=0"></script>
+    <script src="/Scripts/ga/publicFile.js"></script>
+    <noscript>您的浏览器不支持JavaScript,请使用其它浏览器</noscript>
+
+
+    <style>
+        .openApp_wrapper{z-index:999;padding:10px 0px;position:relative;background:#f2f2f2;}
+        .information_con{padding-left:110px;padding-right:53px;position:relative;height:64px;}
+        .line-1{padding-top:3px;margin-bottom:6px;line-height:16px;font-size:14px;color:#282828;}
+        .line-2{line-height:16px;font-size:12px;color:#666666;}
+        .openApp_logo{position:absolute;top:0px;left:36px;width:64px;height:64px;}
+        .openApp_close{z-index: 9999;display: block;position:absolute;top:0px;left:0px;width:37px;height:100%;}
+        .openApp_close_icon{position:absolute;top:37px;left:16px;width:10px;height:10px;}
+        .openApp_open{z-index: 9999;display: block;position:absolute;top:0px;right:0px;padding-right:16px;width:52px;height:100%;line-height:84px;text-align:center;font-size:18px;color:#007efd;}
+    </style>
+</head>
+<body>
+    
+    <script>
+        //判断字符是否为空的方法
+        function isEmpty(obj) {
+            if (typeof obj == "undefined" || obj == null || obj == "") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+    <div id="minheight">
+        
+
+
+<header id="r_header" class="r_title">
+        <div class="r_returnbk" onclick="popPage()">
+            <i></i></div>
+        搜索职位
+</header>
+<div>
+    <div class="errormsg"><img src="//img09.zhaopin.cn/2012/other/mobile/m/errorImg.png" /></div>
+    <div class="errormsg">亲爱的小伙伴，当前搜索条件<br/>下没有合适的职位<br/>建议您修改搜索条件重新搜索<br/>一遍，会有惊喜哦~</section><section class='othermore'><a  class='newsbg' href='/searchjob/startsearch'>重新搜索</a></section></div>
+</div>
+<style type="text/css">
+    body > div{ background:#d6d6d6 !important;}
+</style>
+
+    </div>
+        <div class="home_box">
+            <ul class="bottom_nav">
+                <li><a class="__ga__index_IndexHomeEvent__001" href="/"><i></i>首页</a></li>
+                <li>
+                        <a class="__ga__index_MyZhilianEvent_001" rel="nofollow" onclick="userLogin(true);"><i></i>我的智联</a>
+                </li>
+                <li><a class="__ga__index_appDownload_001" rel="nofollow" href="/DownLoad/downapp.html"><i></i>APP下载</a></li>
+                
+                <li>
+                    <a target="_blank" class="__ga__index_homeFutureFoot_001" rel="nofollow" href="http://cnt.zhaopin.com/Market/whole_counter.jsp?sid=121129468&site=bea14&url=https://best.zhaopin.com"><i></i>最佳雇主</a>
+                </li>
+                <li><a class="__ga__index_userFeedback_001" rel="nofollow" href="/feedback/index"><i></i>用户反馈</a></li>
+            </ul>
+            <div class="version">
+                &copy;2018 zhaopin.com 智联招聘，更懂你的价值
+                <p>北京智联三珂人才服务有限公司 <a href="https://img00.zhaopin.cn/new2011/bottom/license.html" style="color:#1AA6FF;">营业执照</a></p>
+                <p>010-58692828</p>
+                <p style="padding-bottom:10px;">热线客服 400-885-9898</p>
+            </div>
+        </div>
+    <div class="go-top __ga__index_goTop_001" onclick="go_top();"></div>
+
+    
+
+    
+
+    <script>
+        function close_openbox() {
+            $(".openApp_wrapper").hide();
+            $(".openApp_wrapper").attr("data-display", "1");
+            $(".j_header.f").css("top", "0px");
+            $(".j_header.f").animate({ "opacity": 1 });
+            $("#r_header").css("top", "0px");
+            $(".EnterpriseTab.EnterpriseTabF13").css("top", "44px");
+        }
+        function do_open() {
+            var e = ""
+                , d = navigator.userAgent
+                , c = (d.match(/(iPad).*OS\s([\d_]+)/)) ? true : false;
+            isIphone = (!c && d.match(/(iPhone\sOS)\s([\d_]+)/)) ? true : false;
+            if (c) {
+                window.location = "/searchjob/Openapp?type=101";
+                setTimeout(function () {
+                    window.location = 'http://itunes.apple.com/cn/app/id488033535';
+                },
+                    1000);
+                return false;
+            } else {
+                if (isIphone) {
+                    window.location = "zpm://IMMessage/";
+                    setTimeout(function () {
+                        window.location = 'http://itunes.apple.com/cn/app/id488033535';
+                    },
+                        1000);
+                    return false;
+                } else {
+                    window.location = "zpm://MainTabInterview?action=6";
+                    setTimeout(function () {
+                        window.location = "http://images.zhaopin.com/2012/other/mobile/zhaopin_mzhan.apk";
+                        //window.location = "http://m.zhaopin.com/Views/Account/android.html"
+                    },
+                        3000);
+                    return false;
+                }
+            }
+            return e
+        }
+    </script>
+    <script>
+        var date2 = new Date();
+        var days = 10 * 365;
+        date2.setTime(date2.getTime() + days * 24 * 3600 * 1000);
+        var _userAgent = "";
+        //获取URL中参数值
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        };
+        var _platform = "";
+        if (window.location.href.indexOf("platform") > 0) {
+            _platform = GetQueryString("platform");
+        }
+        if (_platform != "") {
+            document.cookie = "_platform=" + _platform + ";path=/;expires=" + date2.toGMTString() + ";domain=.zhaopin.com";
+        }
+        if (window.location.href.indexOf("uid") > 0 || (!isEmpty(_platform) && _platform != 7) || (!isEmpty(getCookie("_platform")) && getCookie("_platform") != 7)) {
+            $(".home_box").hide();
+            $(".indexLayer").remove();
+            $(".indexLayer").remove();
+            $("body").css("padding-bottom", "60px");
+        } else {
+            // app,Baidu小程序打开m站不显示下载app浮层
+            var s = '<div class="openApp_wrapper" style="pointer-events: none;"><div class="openApp_close" style="pointer-events: auto;" onclick="close_openbox()"><img src="//img09.zhaopin.com/2012/other/mobile/m/openAPP_close_icon.png" class="openApp_close_icon" /></div><div class="information_con"><img src="//img09.zhaopin.com/2012/other/mobile/m/openAPP_logo_icon.png" class="openApp_logo" /><p class="line-1">智联招聘网-找工作求职人才招聘软件</p><p class="line-2">Beijing Zhaopin.com Co.,Ltd</p></div><a class="openApp_open" style="pointer-events: auto;" onclick="do_open()">打开</a></div>';
+            $("#minheight").before(s);
+            // document.write(s);
+        }
+        if (window.location.href.indexOf("uticket") > 0) {
+            document.cookie = "zp-auth=" + GetQueryString("uticket") + ";path=/;expires=" + date2.toGMTString() + ";domain=.zhaopin.com";
+        }
+    </script>
+    
+    <script>
+        //返回顶部
+        function go_top() {
+            $(window).scrollTop(0);
+        }
+        //显示隐藏返回顶部
+        var winH = $(window).height() * 1.5;
+        var $goTop = $(".go-top");
+        $(window).scroll(function () {
+            var winS = $(window).scrollTop();
+            if (winS > winH) {
+                $goTop.show().animate({ "opacity": 1 });
+            } else {
+                $goTop.animate({ "opacity": 0 }).hide();
+            }
+        });
+        //注册统计
+        function goreg() {
+            window.location.href = "/account/regist";
+        }
+
+        function setSessionCookie(name, value, cookiePath) {
+            var isIE = !-[1, ];//判断是否是ie核心浏览器
+            if (isIE) {
+                if (value) {
+                    var expire = "; expires=At the end of the Session";
+                    var path = "";
+                    if (cookiePath != null) {
+                        path = "; path=" + cookiePath;
+                    }
+                    document.cookie = name + "=" + escape(value) + expire + path;
+                }
+            } else {
+                if (value) {
+                    var expire = "; expires=Session";
+                    var path = "";
+                    if (cookiePath != null) {
+                        path = "; path=" + cookiePath;
+                    }
+                    document.cookie = name + "=" + escape(value) + expire + path;
+                }
+            }
+        }
+
+    </script>
+
+    
+    <script type="text/javascript">
+
+    </script>
+
+    
+
+    
+    <script src="//img09.zhaopin.cn/2012/other/mobile/Mcontent/Scripts/common_ga171016.js"></script>
+    <script src="//img09.zhaopin.cn/2012/other/mobile/Mcontent/Scripts/global_za.js"></script>
+
+    
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+</body>
+</html>
